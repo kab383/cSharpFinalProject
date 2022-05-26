@@ -9,19 +9,21 @@ namespace KomodoCafe.Repository
     {
         //CLASS OBJECT of MENU
         //Properties
-        public int MealNumber { get; set; }
+        public string MealNumber { get; set; }
         public string MealName { get; set; }
         public string MealDescription { get; set; }
-        public List<string> MealIngredients { get; set; }
+        public string[] MealIngredients { get; set; }
         public float MealPrice { get; set; }
+        public int Calories { get; set; }
 
-        public Menu(int mealNumber, string mealName, string mealDescription, List<string> mealIngredients, float mealPrice)
+        public Menu(string mealNumber, string mealName, string mealDescription, string[] mealIngredients, float mealPrice, int calories)
         {
             MealNumber = mealNumber;
             MealName = mealName;
             MealDescription = mealDescription;
             MealIngredients = mealIngredients;
             MealPrice = mealPrice;
+            Calories = calories;
         }
 
     }

@@ -17,5 +17,11 @@ namespace KomodoCafe.ConsoleApp
                                 "#5 Hot Dog");
         }
 
+        public string GetOrderFromCustomer()
+        {
+            Console.Write("Please enter your order: #");
+            return Console.ReadLine();
+        }
+
     }
 }

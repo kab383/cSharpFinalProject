@@ -21,12 +21,42 @@ namespace KomodoCafe.ConsoleApp
             {
                 _customConsole.PrintMainMenu();
 
-                string orderNumber = _customConsole.CustomerInput();
+                string input = _customConsole.CustomerInput();
 
-                //customerOrderSwitchCase(orderNumber);
+                MainMenuSelectionSwitchCase(input);
             }
         }
+        
+        private void MainMenuSelectionSwitchCase(string input)
+        {
+            switch(input)
+            {
+                case "1":
+                    ViewFullMenu();
+                    break;
+                // case "2":
+                //     _menuRepo.AddMealToMenu();
+                //     break;
+                // case "3":
+                //     _menuRepo.DeleteMealFromMenu();
+                //     break;
+                // default:
+                //     Console.WriteLine("Please select one of the options provided.");
+                //     break;
+            }            
+        }
 
+        private void ViewFullMenu()
+        {
+            List<Menu> allMeals = _menuRepo.GetMenu();
+
+            foreach (Menu meal in allMeals)
+            {
+                _customConsole.PrintMeal(meal);
+            }
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
 
     }
 }

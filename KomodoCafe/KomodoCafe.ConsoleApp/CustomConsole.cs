@@ -13,7 +13,7 @@ namespace KomodoCafe.ConsoleApp
         {
             Console.WriteLine("1. See menu items\n" +
                                 "2. Add a meal to the menu\n" +
-                                "3. Delete a meal from the menu\n");
+                                "3. Delete a meal from the menu");
         }
 
         public string CustomerInput()
@@ -21,24 +21,14 @@ namespace KomodoCafe.ConsoleApp
             return Console.ReadLine();
         }
 
-        private void CustomerOrderSwitchCase(string orderNumber)
+        public void PrintMeal(Menu meal)
         {
-            switch(orderNumber)
-            {
-                case "1":
-                    PrintMainMenu();
-                    break;
-                case "2":
-                    _menuRepo.AddMealToMenu();
-                    break;
-                case "3":
-                    _menuRepo.DeleteMealFromMenu();
-                    break;
-                default:
-                    Console.WriteLine("Please select one of the options provided.");
-                    break;
-            }            
+            Console.WriteLine($"\nMeal {meal.MealNumber}\n" +
+                        $"{meal.MealName}\n" +
+                        $"Description: {meal.MealDescription}\n" +
+                        $"Ingredients: {meal.MealIngredients}\n" +
+                        $"Price: ${meal.MealPrice}\n" +
+                        $"Calories: {meal.Calories}");
         }
-
     }
 }

@@ -24,16 +24,34 @@ namespace KomodoCafe.Repository
         {
             return _menu;
         }
+
         // NO UPDATE NECESSARY FOR THIS PROJECT
 
-
         // DELETE
-        public void RemoveMealFromMenu(Menu meal)
+        public bool DeleteMealFromMenu(Menu meal)
         {
-            
+            int totalMenuItems = _menu.Count();
+
+            _menu.Remove(meal);
+
+            if (totalMenuItems == _menu.Count())
+            {
+                return false;
+            }
+            return true;
         }
-        
-        // SEED MOVIE DATA
+
+        public void AddMealToMenu()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteMealFromMenu()
+        {
+            throw new NotImplementedException();
+        }
+
+        // SEED MEAL DATA
         public void SeedMenuData()
         {
             string[] burgerIngredients = {"ground beef patty", "tomatoes", "lettuce", "pickles", "onions", "mayonnaise", "ketchup", "bun"};

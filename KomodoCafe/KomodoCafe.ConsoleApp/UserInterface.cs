@@ -19,9 +19,11 @@ namespace KomodoCafe.ConsoleApp
 
             while(isRunning)
             {
-                _customConsole.PrintMealMenu();
+                _customConsole.PrintMainMenu();
 
-                string input = _customConsole.GetOrderFromCustomer();
+                string orderNumber = _customConsole.CustomerInput();
+
+                //customerOrderSwitchCase(orderNumber);
             }
         }
 

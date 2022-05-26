@@ -2,25 +2,42 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KomodoCafe.Repository;
 
 namespace KomodoCafe.ConsoleApp
 {
     public class CustomConsole
     {
-        
-        public void PrintMealMenu()
+        MenuRepository _menuRepo = new MenuRepository();
+        public void PrintMainMenu()
         {
-            Console.WriteLine("#1 Burger\n" +
-                                "#2 Chicken Sandwich\n" +
-                                "#3 Fish Sandwich\n" +
-                                "#4 Pizza Slice - Supreme\n" +
-                                "#5 Hot Dog");
+            Console.WriteLine("1. See menu items\n" +
+                                "2. Add a meal to the menu\n" +
+                                "3. Delete a meal from the menu\n");
         }
 
-        public string GetOrderFromCustomer()
+        public string CustomerInput()
         {
-            Console.Write("Please enter your order: #");
             return Console.ReadLine();
+        }
+
+        private void CustomerOrderSwitchCase(string orderNumber)
+        {
+            switch(orderNumber)
+            {
+                case "1":
+                    PrintMainMenu();
+                    break;
+                case "2":
+                    _menuRepo.AddMealToMenu();
+                    break;
+                case "3":
+                    _menuRepo.DeleteMealFromMenu();
+                    break;
+                default:
+                    Console.WriteLine("Please select one of the options provided.");
+                    break;
+            }            
         }
 
     }

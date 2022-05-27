@@ -37,9 +37,9 @@ namespace KomodoCafe.ConsoleApp
                 // case "2":
                 //     _menuRepo.AddMealToMenu();
                 //     break;
-                // case "3":
-                //     _menuRepo.DeleteMealFromMenu();
-                //     break;
+                case "3":
+                    DeleteMeal();
+                    break;
                 // default:
                 //     Console.WriteLine("Please select one of the options provided.");
                 //     break;
@@ -56,6 +56,25 @@ namespace KomodoCafe.ConsoleApp
             }
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
+        }
+
+        private void DeleteMeal()
+        {
+            Console.Write("Please enter the name of the meal to delete: ");
+            string input = _customConsole.CustomerInput();
+
+            bool successfulDeletion = _menuRepo.DeleteMealFromMenu(input);
+
+            if (successfulDeletion)
+            {
+                Console.WriteLine("Meal successfully deleted from the menu. Press any key to continue...");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("I'm sorry, that meal was not found on the menu. Press any key to continue...");
+                Console.ReadKey();
+            }
         }
 
     }

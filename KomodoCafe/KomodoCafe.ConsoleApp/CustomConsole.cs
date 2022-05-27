@@ -25,10 +25,19 @@ namespace KomodoCafe.ConsoleApp
         {
             Console.WriteLine($"\nMeal {meal.MealNumber}\n" +
                         $"{meal.MealName}\n" +
-                        $"Description: {meal.MealDescription}\n" +
-                        $"Ingredients: {meal.MealIngredients}\n" +
-                        $"Price: ${meal.MealPrice}\n" +
-                        $"Calories: {meal.Calories}");
+                        $"Description: {meal.MealDescription}");
+            Console.Write("Ingredients: ");
+            Print(meal.MealIngredients);
+            Console.WriteLine($"\nPrice: ${meal.MealPrice}\n" +
+                            $"Calories: {meal.Calories}");
+        }
+
+        public void Print(string[] mealingredients)
+        {
+            foreach(string ingredient in mealingredients)
+            {
+                Console.Write($"*{ingredient}* ");
+            }
         }
     }
 }

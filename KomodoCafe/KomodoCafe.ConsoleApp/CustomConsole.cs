@@ -21,6 +21,16 @@ namespace KomodoCafe.ConsoleApp
             return Console.ReadLine();
         }
 
+        public float CustomerInputAsFloat()
+        {
+            return float.Parse(Console.ReadLine());
+        }
+
+        public int CustomerInputAsInt()
+        {
+            return int.Parse(Console.ReadLine());
+        }
+
         public void PrintMeal(Menu meal)
         {
             Console.WriteLine($"\nMeal {meal.MealNumber}\n" +

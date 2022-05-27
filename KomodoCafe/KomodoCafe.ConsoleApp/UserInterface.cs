@@ -34,15 +34,15 @@ namespace KomodoCafe.ConsoleApp
                 case "1":
                     ViewFullMenu();
                     break;
-                // case "2":
-                //     _menuRepo.AddMealToMenu();
-                //     break;
+                case "2":
+                    AddMeal();
+                    break;
                 case "3":
                     DeleteMeal();
                     break;
-                // default:
-                //     Console.WriteLine("Please select one of the options provided.");
-                //     break;
+                default:
+                    Console.WriteLine("Please select one of the options provided.");
+                    break;
             }            
         }
 
@@ -77,5 +77,51 @@ namespace KomodoCafe.ConsoleApp
             }
         }
 
+        private void AddMeal()
+        {
+            Console.WriteLine("Please complete the following fields to add a meal to the menu.");
+
+            Console.Write("\nMeal Number (please include #): ");
+            string number = _customConsole.CustomerInput();
+            
+            Console.Write("\nMeal Name: ");
+            string name = _customConsole.CustomerInput();
+
+            Console.Write("\nMeal Description: ");
+            string description = _customConsole.CustomerInput();
+
+            Console.WriteLine("\nMeal Ingredients (when finished adding ingredients, please type 'done' to the console): ");
+            bool addIngredientsLoop = true;
+            
+            List<string> ingredients = new List<string>();
+
+            while(addIngredientsLoop)
+            {
+                string inputIngredients = _customConsole.CustomerInput();
+                ingredients.Add(inputIngredients);
+                
+                if(inputIngredients == "done")
+                {
+                    addIngredientsLoop = false;
+                }
+            }
+
+            ingredients.Remove("done");
+            
+            string[] ingredientsArr = ingredients.ToArray();
+            
+            Console.Write("\nMeal Price: $");
+            float price = _customConsole.CustomerInputAsFloat();
+
+            Console.Write("\nCalories: ");
+            int calories = _customConsole.CustomerInputAsInt();
+
+            Menu newMeal = new Menu(number, name, description, ingredientsArr, price, calories);
+
+            _menuRepo.AddMealToMenu(newMeal);
+
+            Console.WriteLine($"\nYou have added {name} to the menu. Press any key to continue...");
+            Console.ReadKey();
+        }
     }
 }

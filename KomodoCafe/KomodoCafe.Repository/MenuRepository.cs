@@ -9,49 +9,30 @@ namespace KomodoCafe.Repository
     {
         
         private List<Menu> _menu = new List<Menu>();
-        
-        // CRUD
 
-        // CREATE - customize a meal - stretch goal
-        public void AddMealToMenu(Menu meal)
-        {
-            _menu.Add(meal);
-        }
-
-
-        // READ
         public List<Menu> GetMenu()
         {
             return _menu;
         }
 
-        // NO UPDATE NECESSARY FOR THIS PROJECT
-
-        // DELETE
-        public bool DeleteMealFromMenu(Menu meal)
+        public void AddMealToMenu(Menu meal)
         {
-            int totalMenuItems = _menu.Count();
+            _menu.Add(meal);
+        }
 
-            _menu.Remove(meal);
-
-            if (totalMenuItems == _menu.Count())
+        public bool DeleteMealFromMenu(string mealName)
+        {
+            foreach(Menu meal in _menu)
             {
-                return false;
+                if(meal.MealName.ToUpper() == mealName.ToUpper())
+                {
+                    _menu.Remove(meal);
+                    return true;
+                }
             }
-            return true;
+            return false;
         }
 
-        public void AddMealToMenu()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeleteMealFromMenu()
-        {
-            throw new NotImplementedException();
-        }
-
-        // SEED MEAL DATA
         public void SeedMenuData()
         {
             string[] burgerIngredients = {"ground beef patty", "tomatoes", "lettuce", "pickles", "onions", "mayonnaise", "ketchup", "bun"};
@@ -80,7 +61,6 @@ namespace KomodoCafe.Repository
             {
                 AddMealToMenu(meal);
             }
-
         }
     }
 }

@@ -1,0 +1,12 @@
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\bin\Debug\net6.0\KomodoClaims.Repository.deps.json
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\bin\Debug\net6.0\KomodoClaims.Repository.dll
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\bin\Debug\net6.0\KomodoClaims.Repository.pdb
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.AssemblyInfoInputs.cache
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.AssemblyInfo.cs
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.dll
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\refint\KomodoClaims.Repository.dll
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\KomodoClaims.Repository.pdb
+C:\ElevenFiftyProjects\codingFoundations\dotnetProjects\csharpBasics\cSharpFinalProject\KomodoClaims\KomodoClaims.Repository\obj\Debug\net6.0\ref\KomodoClaims.Repository.dll

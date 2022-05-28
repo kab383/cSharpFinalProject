@@ -7,8 +7,6 @@ namespace KomodoCafe.Repository
 {
     public class Menu
     {
-        //CLASS OBJECT of MENU
-        //Properties
         public string MealNumber { get; set; }
         public string MealName { get; set; }
         public string MealDescription { get; set; }

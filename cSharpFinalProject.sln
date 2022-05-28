@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoCafe.ConsoleApp", "Ko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoCafe.Repository", "KomodoCafe\KomodoCafe.Repository\KomodoCafe.Repository.csproj", "{3D7E5558-2096-403D-B1A6-BE849A4EEF83}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KomodoClaims", "KomodoClaims", "{89536987-67F7-412B-B34B-9A5D5E8EEFCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoClaims.ConsoleApp", "KomodoClaims\KomodoClaims.ConsoleApp\KomodoClaims.ConsoleApp.csproj", "{ACF460B7-8C1B-4F73-94B8-9BAA0CE87CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoClaims.Repository", "KomodoClaims\KomodoClaims.Repository\KomodoClaims.Repository.csproj", "{BFCB159E-A218-40D4-BCB2-CA24FC6A0542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,19 @@ Global
 		{3D7E5558-2096-403D-B1A6-BE849A4EEF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D7E5558-2096-403D-B1A6-BE849A4EEF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D7E5558-2096-403D-B1A6-BE849A4EEF83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF460B7-8C1B-4F73-94B8-9BAA0CE87CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF460B7-8C1B-4F73-94B8-9BAA0CE87CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF460B7-8C1B-4F73-94B8-9BAA0CE87CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF460B7-8C1B-4F73-94B8-9BAA0CE87CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCB159E-A218-40D4-BCB2-CA24FC6A0542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCB159E-A218-40D4-BCB2-CA24FC6A0542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCB159E-A218-40D4-BCB2-CA24FC6A0542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCB159E-A218-40D4-BCB2-CA24FC6A0542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{40D71109-D4ED-4A3D-8BC8-3AF4663823D7} = {1F70C798-54B3-4ED0-8FC1-5077462C7C86}
 		{3D7E5558-2096-403D-B1A6-BE849A4EEF83} = {1F70C798-54B3-4ED0-8FC1-5077462C7C86}
+		{ACF460B7-8C1B-4F73-94B8-9BAA0CE87CE5} = {89536987-67F7-412B-B34B-9A5D5E8EEFCB}
+		{BFCB159E-A218-40D4-BCB2-CA24FC6A0542} = {89536987-67F7-412B-B34B-9A5D5E8EEFCB}
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,6 @@ namespace KomodoClaims.Repository
     public class Claim
     {
         public int ClaimID { get; set; }
-        public string ClaimType { get; set; }
         public string Description { get; set; }
         public decimal ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
@@ -26,4 +25,5 @@ namespace KomodoClaims.Repository
             IsValid = isValid;
         }
     }
+    public enum ClaimType { Car, Home, Theft }
 }
